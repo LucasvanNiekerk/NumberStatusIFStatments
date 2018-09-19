@@ -61,7 +61,6 @@ namespace NumberStatusIFStatments
                 else
                 {
                     Console.WriteLine("Det var desværre ikke en mulighed prøv igen. \n");
-
                     Everything();
                 }
             }

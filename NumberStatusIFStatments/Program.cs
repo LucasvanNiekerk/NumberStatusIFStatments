@@ -58,11 +58,11 @@ namespace NumberStatusIFStatments
                     Console.WriteLine(numberOne + " er større end " + numberTwo + "! \n");
                     Everything();
                 }
-                else
-                {
-                    Console.WriteLine("Det var desværre ikke en mulighed prøv igen. \n");
-                    Everything();
-                }
+            }
+            else
+            {
+                Console.WriteLine("Det var desværre ikke en mulighed prøv igen. \n");
+                Everything();
             }
         }
     }

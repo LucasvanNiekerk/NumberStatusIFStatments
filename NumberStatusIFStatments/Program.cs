@@ -28,20 +28,20 @@ namespace NumberStatusIFStatments
                     Everything();
                 }
 
-                if (number == 0)
+                else if (number == 0)
                 {
                     Console.WriteLine(number + " er nul! \n");
                     Everything();
                 }
 
-                if (number > 0)
+                else if (number > 0)
                 {
                     Console.WriteLine(number + " er et positivt tal! \n");
                     Everything();
                 }
             }
 
-            if (information == "s" || information == "S") //Hvis brugeren vil vide hvilket tal er størst
+            else if (information == "s" || information == "S") //Hvis brugeren vil vide hvilket tal er størst
             {
                 Console.WriteLine("Indtast venligst det første tal!");
                 int numberOne = Convert.ToInt32(Console.ReadLine());
@@ -52,10 +52,14 @@ namespace NumberStatusIFStatments
                     Console.WriteLine(numberTwo + " er større end " + numberOne + "! \n");
                     Everything();
                 }
-
-                if (numberOne > numberTwo)
+                else if (numberOne > numberTwo)
                 {
                     Console.WriteLine(numberOne + " er større end " + numberTwo + "! \n");
+                    Everything();
+                }
+                else
+                {
+                    Console.WriteLine(numberOne + " og " + numberTwo + " er lige store! \n");
                     Everything();
                 }
             }
